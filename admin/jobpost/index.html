@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Listing_single</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Job Pro" />
+    <meta name="keywords" content="Job Pro" />
+    <meta name="author" content="" />
+    <meta name="MobileOptimized" content="320" />
+    <!--srart theme style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="../assets/vendors/mdi/css/materialdesignicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="../assets/vendors/css/vendor.bundle.base.css"
+  />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="shortcut icon" href="../assets/images/logo/logo.png" />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="index.html"><img style="height: 30px; width: 30px;" src="../assets/images/logo/logo.png" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+                    <div class="search-field" style="display: none;">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="../company/" class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="" id="sidebarProfile" alt="profile" />
+                  <span class="login-status online"></span>
+                  <!--change to offline or busy as needed-->
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2" id="sidebarName"></span>
+                  <span class="text-secondary text-small">Admin</span>
+                </div>
+                <i
+                  class="mdi mdi-bookmark-check text-success nav-profile-badge"
+                ></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item" style="display: none">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#ui-basic"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="menu-title">Basic UI Elements</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/buttons.html"
+                      >Buttons</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/typography.html"
+                      >Typography</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../users/">
+                <span class="menu-title">Candidates</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../jobs/">
+                <span class="menu-title">Jobs</span>
+                <i class="mdi mdi-bag-personal menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../addpost/">
+                <button class="btn btn-block btn-lg btn-gradient-primary mt-4">
+                  + Post Job
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="signout()">
+                <span class="menu-title">Sign Out</span>
+                <i class="mdi mdi-bag-personal menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item" style="display: none">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#general-pages"
+                aria-expanded="false"
+                aria-controls="general-pages"
+              >
+                <span class="menu-title">Sample Pages</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-medical-bag menu-icon"></i>
+              </a>
+              <div class="collapse" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/blank-page.html">
+                      Blank Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/login.html">
+                      Login
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/register.html">
+                      Register
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-404.html">
+                      404
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-500.html">
+                      500
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+
+            <div class="jp_listing_single_main_wrapper" style="height: 90vh; overflow-y: auto;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="jp_listing_left_sidebar_wrapper">
+                      <div class="jp_job_des">
+                        <h2>Job Description</h2>
+                        <p id="jobdescription">Loading...</p>
+                        <ul>
+                          <li>
+                            <i class="fa fa-globe"></i>&nbsp;&nbsp;
+                            <a id="website"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="jp_job_res jp_job_qua">
+                        <h2>Minimum qualifications</h2>
+                        <ul>
+                          <li>
+                            <i class="fa fa-caret-right"></i>&nbsp;&nbsp;
+                            <span id="qualification"></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-caret-right"></i>&nbsp;&nbsp; 2
+                            years of relevant work experience in software
+                            development.
+                          </li>
+                          <li>
+                            <i class="fa fa-caret-right"></i>&nbsp;&nbsp;
+                            Programming experience in C, C++ or Java.
+                          </li>
+                          <li>
+                            <i class="fa fa-caret-right"></i>&nbsp;&nbsp;
+                            Experience with AJAX, HTML and CSS.
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="jp_job_apply">
+                        <h2>How To Apply</h2>
+                        <p>
+                          To apply upload your resume and enter details properly
+                        </p>
+                      </div>
+                      <div class="jp_job_apply">
+                        <h2>Loacation</h2>
+                        <p id="location"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div
+                          class="jp_rightside_job_categories_wrapper jp_rightside_listing_single_wrapper"
+                        >
+                          <div class="jp_rightside_job_categories_heading">
+                            <h4>Job Overview</h4>
+                          </div>
+                          <div class="jp_jop_overview_img_wrapper">
+                            <div class="jp_jop_overview_img">
+                              <img
+                                style="
+                                  height: 60px;
+                                  width: 60px;
+                                  border-radius: 50%;
+                                "
+                                src="images/content/job_post_img1.jpg"
+                                id="img_right"
+                                alt="post_img"
+                              />
+                            </div>
+                          </div>
+                          <div class="jp_job_listing_single_post_right_cont">
+                            <div
+                              class="jp_job_listing_single_post_right_cont_wrapper"
+                            >
+                              <h4 id="title_right"></h4>
+                              <p id="company_right"></p>
+                            </div>
+                          </div>
+                          <div class="jp_job_post_right_overview_btn_wrapper">
+                            <div class="">
+                                  <span
+                                    class="btn btn-sm btn-primary"
+                                    id="jobTypeTop"
+                                  ></span>
+                                  <a
+                                  id="applications"
+                                    class="btn btn-sm btn-success"
+                                  >
+                                Applications</a>
+                            </div>
+                          </div>
+                          <div
+                            class="jp_listing_overview_list_outside_main_wrapper"
+                          >
+                            <div class="jp_listing_overview_list_main_wrapper">
+                              <div class="jp_listing_list_icon">
+                                <i class="fa fa-calendar"></i>
+                              </div>
+                              <div class="jp_listing_list_icon_cont_wrapper">
+                                <ul>
+                                  <li>Date Posted:</li>
+                                  <li id="jobDate"></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              class="jp_listing_overview_list_main_wrapper jp_listing_overview_list_main_wrapper2"
+                            >
+                              <div class="jp_listing_list_icon">
+                                <i class="fa fa-map-marker"></i>
+                              </div>
+                              <div class="jp_listing_list_icon_cont_wrapper">
+                                <ul>
+                                  <li>Location:</li>
+                                  <li id="location_right"></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              class="jp_listing_overview_list_main_wrapper jp_listing_overview_list_main_wrapper2"
+                            >
+                              <div class="jp_listing_list_icon">
+                                <i class="fa fa-info-circle"></i>
+                              </div>
+                              <div class="jp_listing_list_icon_cont_wrapper">
+                                <ul>
+                                  <li>Job Type:</li>
+                                  <li id="jobType_right"></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              class="jp_listing_overview_list_main_wrapper jp_listing_overview_list_main_wrapper2"
+                            >
+                              <div class="jp_listing_list_icon">
+                                <i class="fa fa-info-circle"></i>
+                              </div>
+                              <div class="jp_listing_list_icon_cont_wrapper">
+                                <ul>
+                                  <li>Job Sector:</li>
+                                  <li id="jobsector_right"></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              class="jp_listing_overview_list_main_wrapper jp_listing_overview_list_main_wrapper2"
+                            >
+                              <div class="jp_listing_list_icon">
+                                <i class="fa fa-info-circle"></i>
+                              </div>
+                              <div class="jp_listing_list_icon_cont_wrapper">
+                                <ul>
+                                  <li>Job Category:</li>
+                                  <li id="jobCategory"></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              class="jp_listing_overview_list_main_wrapper jp_listing_overview_list_main_wrapper2"
+                            >
+                              <div class="jp_listing_list_icon">
+                                <i class="fa fa-clock-o"></i>
+                              </div>
+                              <div class="jp_listing_list_icon_cont_wrapper">
+                                <ul>
+                                  <li>Hours:</li>
+                                  <li id="jobTiming_right"></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              class="jp_listing_overview_list_main_wrapper jp_listing_overview_list_main_wrapper2"
+                            >
+                              <div class="jp_listing_list_icon">
+                                <i class="fa fa-money"></i>
+                              </div>
+                              <div class="jp_listing_list_icon_cont_wrapper">
+                                <ul>
+                                  <li>Salary:</li>
+                                  <li id="salary_right"></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div
+                              class="jp_listing_overview_list_main_wrapper jp_listing_overview_list_main_wrapper2"
+                            >
+                              <div class="jp_listing_list_icon">
+                                <i class="fa fa-star"></i>
+                              </div>
+                              <div class="jp_listing_list_icon_cont_wrapper">
+                                <ul>
+                                  <li>Experience:</li>
+                                  <li id="experience_right"></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="display: none;" class="p-3 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 96.5%;  margin: 2rem auto; background-color: white;">
+                    <h3>Applicants</h3>
+                    <div class="row" style="margin-top: 2rem;">
+
+
+                    <div> 
+                        <div class="dflex flex-sm-column flex-md-column">
+                            <img style="height: 100px; width: 100px;" src="https://firebasestorage.googleapis.com/v0/b/job-portal-96498.appspot.com/o/COMPANY%2FMd11U4DRRMffw3JqRlw6DsMwc8e2%2FMd11U4DRRMffw3JqRlw6DsMwc8e2.jpg?alt=media&token=2a20ecdc-3480-4a9c-af4f-0922310acda2" alt="">
+                            <div>
+                                jobtitle
+                                jobtitle
+                                jobtitle
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../assets/js/off-canvas.js"></script>
+    <script src="../assets/js/hoverable-collapse.js"></script>
+    <script src="../assets/js/misc.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
+    <script src="../firebase/firebase_config.js"></script>
+    <script src="fetchCompanyData.js"></script>
+    <script src="../commonFunctions.js"></script>
+  </body>
+</html>

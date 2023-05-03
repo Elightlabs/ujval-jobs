@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Register</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="Ujval Jobs" />
+  <meta name="keywords" content="Ujval Jobs" />
+  <meta name="author" content="" />
+  <meta name="MobileOptimized" content="320" />
+  <!--srart theme style -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
+  <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_II.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive2.css" />
+  <!-- favicon links -->
+  <link rel="shortcut icon" type="image/png" href="images/header/logo.png" />
+</head>
+
+<body>
+  <!-- Top Scroll End -->
+  <!-- Header Wrapper Start -->
+  <div class="jp_top_header_img_wrapper">
+    <div class="gc_main_menu_wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 hidden-xs hidden-sm full_width">
+            <div class="gc_header_wrapper">
+              <div class="gc_logo">
+                <a href="index.html">
+                  <img style="height: 40px" src="/images/header/logo.png" alt="Logo" title="Ujval Jobs"
+                    class="img-responsive" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 full_width">
+            <div class="header-area hidden-menu-bar stick" id="sticker">
+              <!-- mainmenu start -->
+              <div class="mainmenu">
+                <ul class="float_left">
+                  <li class="gc_main_navigation parent">
+                    <a href="index.html" class="gc_main_navigation"> Home</a>
+                  </li>
+                  <li class="gc_main_navigation parent">
+                    <a href="/listing_right.html" class="gc_main_navigation"
+                      >Jobs</a
+                    >
+                  </li>
+
+                  <li class="gc_main_navigation parent">
+                    <a href="/blog_right.html" class="gc_main_navigation"
+                      >Blogs</a
+                    >
+                  </li>
+                  <li class="gc_main_navigation parent">
+                    <a href="/contact.html" class="gc_main_navigation"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="gc_main_navigation parent profile-page">
+                    <a
+                      href="/candidate_profile.html"
+                      class="gc_main_navigation"
+                      >Profile</a
+                    >
+                  </li>
+                  <li class="signout-btn gc_main_navigation parent">
+                    <a onclick="signout()" class="gc_main_navigation"
+                      >Sign Out</a
+                    >
+                  </li>
+                  <li class="login-btn gc_main_navigation parent">
+                    <a href='/login.html' class="gc_main_navigation"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- mainmenu end -->
+              <!-- mobile menu area start -->
+              <header class="mobail_menu">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="gc_logo">
+                        <a href="index.html">
+                          <img style="height: 30px" src="/images/header/logo.png" alt="Logo" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="cd-dropdown-wrapper">
+                        <a class="house_toggle" href="#0">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177"
+                            style="enable-background: new 0 0 31.177 31.177" xml:space="preserve" width="25px"
+                            height="25px">
+                            <g>
+                              <g>
+                                <path class="menubar"
+                                  d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z"
+                                  fill="#fff" />
+                              </g>
+                              <g>
+                                <path class="menubar"
+                                  d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z"
+                                  fill="#fff" />
+                              </g>
+                              <g>
+                                <path class="menubar"
+                                  d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z"
+                                  fill="#fff" />
+                              </g>
+                              <g>
+                                <path class="menubar"
+                                  d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z"
+                                  fill="#fff" />
+                              </g>
+                              <g>
+                                <path class="menubar"
+                                  d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z"
+                                  fill="#fff" />
+                              </g>
+                            </g>
+                          </svg>
+                        </a>
+                        <nav class="cd-dropdown">
+                          <a href="#0" class="cd-close">Close</a>
+                          <ul class="cd-dropdown-content">
+                            <li>
+                              <a href="/">Home</a>
+                            </li>
+                            <li>
+                              <a href="/listing_right.html">Jobs</a>
+                            </li>
+                            <li>
+                              <a href="/blog_right.html">Blogs</a>
+                            </li>
+                            <li>
+                              <a href="/contact.html">Contact</a>
+                            </li>
+                            <li class="profile-page">
+                              <a href="/candidate_profile.html">Profile</a>
+                            </li>
+                            <li class="login-btn">
+                              <a href="/login.html">Login</a>
+                            </li>
+                            <li class="signout-btn">
+                              <span onclick="signout()">Sign Out</span>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+            </div>
+          </div>
+          <div class="hidden col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-sm hidden-xs"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Wrapper End -->
+  <!-- jp Tittle Wrapper Start -->
+  <div class="jp_tittle_main_wrapper">
+    <div class="jp_tittle_img_overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="jp_tittle_heading_wrapper">
+            <div class="jp_tittle_heading">
+              <h2>Register</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jp Tittle Wrapper End -->
+
+  <!-- jp register wrapper start -->
+  <div class="register_section">
+    <!-- register_form_wrapper -->
+    <div class="register_tab_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div role="tabpanel">
+              <!-- Nav tabs -->
+              <ul id="tabOne" class="nav register-tabs">
+                <li class="active">
+                  <a href="#contentOne-1" data-toggle="tab">personal account <br />
+                    <span>i am looking for a job</span></a>
+                </li>
+                <!-- <li>
+                  <a href="#contentOne-2" data-toggle="tab">company account <br />
+                    <span>We are hiring Employees</span></a>
+                </li> -->
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane fade in active register_left_form" id="contentOne-1">
+                  <div class="jp_regiter_top_heading">
+                    <p>Fields with * are mandetory</p>
+                  </div>
+                  <div class="row">
+                    <form id="personal_form" data-toggle="validator">
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Username</label>
+                        <input type="text" id="username_personal" name="field-name" value="" placeholder="Username*"
+                          required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">First Name</label>
+                        <input type="text" name="field-name" value="" placeholder="First Name" id="firstname_personal"
+                          required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Last Name</label>
+                        <input type="text" name="field-name" value="" placeholder="Last Name*" id="lastname_personal"
+                          required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Email</label>
+                        <input type="email" name="field-name" id="email_personal" value="" placeholder="Email*"
+                          required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Password</label>
+                        <input type="password" name="password" value="" id="password_personal" placeholder=" password*"
+                          required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Confirm Password</label>
+                        <input type="password" name="confirm" value="" placeholder="re-enter password*"
+                          id="confirmpassword_personal" required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Qualification</label>
+                        <input type="text" name="field-name" value="" placeholder="Qualification"
+                          id="qualification_personal" required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Years of Experience</label>
+                        <input type="text" name="field-name" value="" placeholder="Years of Experience*"
+                          id="experience_personal" required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Current Company</label>
+                        <input type="text" name="field-name" value="" placeholder="Current Company"
+                          id="lastwork_personal" required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Phone Number</label>
+                        <input type="tel" name="phone" placeholder="Phone Number" id="phone_personal" required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">City</label>
+                        <input type="text" name="field-name" id="city_personal" value="" placeholder="City" required />
+                      </div>
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Address</label>
+                        <input type="text" placeholder="Address" id="address_personal" required />
+                      </div>
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Zip Code</label>
+                        <input type="text" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" placeholder="Zip Code"
+                          id="zipcode_personal" required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Country</label>
+                        <select class="form-select" id="country_personal" required>
+                          <option selected disabled value="">Country</option>
+                          <option>India</option>
+                          <option>India</option>
+                          <option>India</option>
+                        </select>
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <label for="">Portfolio Link</label>
+                        <input type="url" name="field-name" id="porfolio_personal" value=""
+                          placeholder="portfolio link" />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12 custom_input hidden">
+                        <label for="profilephoto_personal">Image</label>
+                        <input type="file" id="profilephoto_personal" required onchange="readURL(this);" />
+                        <div class="img-upload">
+                          <img id="blah" src="images/content/base.png" alt="your image" />
+                        </div>
+                      </div>
+                      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="check-box text-center">
+                          <input type="checkbox" name="shipping-option" id="account-option_1" />
+                          &ensp;
+                          <label for="account-option_1">I agreed to the
+                            <a href="/termsncond.html" class="check_box_anchr">Terms and Conditions</a>
+                            governing the use of jobportal</label>
+                        </div>
+                      </div>
+                      <div class="login_btn_wrapper register_btn_wrapper login_wrapper">
+                        <button id="register_btn" type="button" class="btn btn-primary login_btn">
+                          register
+                        </button>
+                        <!-- <a type="submit" href="javascript:;" class="btn btn-primary login_btn"> register </a> -->
+                      </div>
+                    </form>
+                  </div>
+                  <div class="login_message">
+                    <p>Already a member? <a href="/login.html"> Login Here </a></p>
+                  </div>
+                </div>
+                <div class="tab-pane fade register_left_form" id="contentOne-2">
+                  <div class="jp_regiter_top_heading">
+                    <p>Fields with * are mandetory</p>
+                  </div>
+                  <div class="row clearfix">
+                    <form id="form_company" data-toggle="validator">
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" id="username_company" name="field-name" value="" placeholder="Username*"
+                          required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="email" id="email_company" name="field-name" value="" placeholder="Email*"
+                          required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" name="password" value="" placeholder="password*" onChange="onChange()"
+                          id="password_company" required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" name="confirm" value="" onChange="onChange()"
+                          placeholder="re-enter password*" id="confirmpassword_company" required />
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="tel" name="phone" id="phone_company" placeholder="Phone Number"
+                          pattern="[7-9]{1}[0-9]{9}" required />
+                      </div>
+
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" name="field-name" value="" id="companyname_company"
+                          placeholder="company name" required />
+                      </div>
+
+                      <!--Form Group-->
+                      <!-- <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" name="field-name" value="" id="website_company" placeholder="website"
+                          required />
+                      </div> -->
+                      <!--Form Group-->
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" name="field-name" id="addressline_company" value=""
+                          placeholder="address line" />
+                      </div>
+                      <div class="form-group col-md-6 col-sm-6 col-xs-12 custom_input">
+                        <label for="profilephoto_company">Image</label>
+                        <input type="file" id="profilephoto_company" required onchange="readURL1(this);" />
+                        <div class="img-upload">
+                          <img id="blah1" src="images/content/base.png" alt="your image" />
+                        </div>
+                      </div>
+                      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="check-box text-center">
+                          <input type="checkbox" name="shipping-option" id="account-option_2" />
+                          &ensp;
+                          <label>I agreed to the <a href="/termsncond.html" class="check_box_anchr">Terms and Conditions</a>governing the use of jobportal</label>
+                        </div>
+                      </div>
+                      <div class="login_btn_wrapper register_btn_wrapper login_wrapper">
+                        <button id="register_btn" type="button" class="btn btn-primary login_btn" onclick="signUp()">
+                          register
+                        </button>
+                        <!-- <a href="javascript:;" class="btn btn-primary login_btn"> register </a> -->
+                      </div>
+                    </form>
+                  </div>
+                  <div class="login_message">
+                    <p>Already a member? <a href="/login.html"> Login Here </a></p>
+                  </div>
+                </div>
+              </div>
+              <p class="btm_txt_register_form">
+                In case you are using a public/shared computer we recommend
+                that you logout to prevent any un-authorized access to your
+                account
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jp register wrapper end -->
+  <div style="background-color: rgb(44, 44, 44); padding: 40px 20px; color: white; font-size: 1.5rem;">
+    Have a question <a href="/havequestions.html">Click Here</a>
+  </div>
+  <!-- jp Newsletter Wrapper Start -->
+  <div class="jp_main_footer_img_wrapper">
+    <div class="jp_newsletter_img_overlay_wrapper"></div>
+
+    <!-- jp footer Wrapper Start -->
+    <div class="jp_footer_main_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="jp_footer_three_sec_main_wrapper">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="jp_footer_first_cont_wrapper">
+                <div class="jp_footer_first_cont">
+                   <h2>About Us</h2>
+                  <p>
+                    Ujval job.com is the most reliable job searching site that provides maximum job post for variety of
+                    job seeker throughout the country.
+                  </p>
+                  <a href="/havequestions.html" style="font-weight: bold; color: rgb(58, 58, 198); text-decoration: underline; margin-top: 7px;">Have Questions?</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="jp_footer_candidate_wrapper jp_footer_candidate_wrapper2">
+                <div class="jp_footer_candidate">
+                  <h2>For candidate</h2>
+                  <ul>
+                    <li>
+                      <a onclick="handleLoginCheck()"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Add a Resume</a>
+                    </li>
+                    <li>
+                      <a href="/listing_right.html"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Job</a>
+                    </li>
+                    <li>
+                      <a href="/contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Contact</a>
+                    </li>
+                    <li>
+                      <a href="blog_right.html"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Blogs</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="jp_footer_candidate_wrapper jp_footer_candidate_wrapper3">
+                <div class="jp_footer_candidate">
+                  <h2>For Employers</h2>
+                  <ul>
+                    <li>
+                      <a href="./admin/"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Browse candidates</a>
+                    </li>
+                    <li>
+                      <a href="./admin/"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        My account</a>
+                    </li>
+                    <li>
+                      <a href="./admin/"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Post Job</a>
+                    </li>
+                    <li>
+                      <a href="./admin/"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Job Page</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="jp_footer_candidate_wrapper jp_footer_candidate_wrapper4">
+                <div class="jp_footer_candidate">
+                  <h2>Information</h2>
+                  <ul>
+                    <li>
+                      <a href="/refund.html"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Refund Policy</a>
+                    </li>
+                    <li>
+                      <a href="./termsncond.html"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a href="./termsncond.html"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="/contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        Contact with Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="jp_bottom_footer_Wrapper">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <div class="jp_bottom_footer_left_cont">
+                    <p>© 2019-20 Ujval Jobs. All Rights Reserved.</p>
+                  </div>
+                  <div class="jp_bottom_top_scrollbar_wrapper">
+                    <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <div class="jp_bottom_footer_right_cont">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                      <li class="hidden-xs">
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </li>
+                      <li class="hidden-xs">
+                        <a href="#"><i class="fa fa-vimeo"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jp footer Wrapper End -->
+  <!--main js file start-->
+  <script src="js/jquery_min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.menu-aim.js"></script>
+  <script src="js/jquery.countTo.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/custom_II.js"></script>
+  <!--main js file end-->
+
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
+  <script src="/js/firebase/firebase_config.js"></script>
+  <script src="/js/firebase/signup.js"></script>
+  <script src="/js/firebase/user/add_userdata.js"></script>
+  <script src="commonFunctions.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>

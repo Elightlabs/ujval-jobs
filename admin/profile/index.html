@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Profile</title>
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/css/vendor.bundle.base.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="shortcut icon" href="/assets/images/logo/logo.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <nav
+        class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+        >
+          <a class="navbar-brand brand-logo" href="../"
+            ><img
+              style="height: 30px; width: 30px"
+              src="/assets/images/logo/logo.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button
+            class="navbar-toggler navbar-toggler align-self-center"
+            type="button"
+            data-toggle="minimize"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <div class="search-field d-none d-md-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-0"
+                  placeholder="Search projects"
+                />
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="../company/" class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="" id="sidebarProfile" alt="profile" />
+                  <span class="login-status online"></span>
+                  <!--change to offline or busy as needed-->
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2" id="sidebarName"></span>
+                  <span class="text-secondary text-small">Admin</span>
+                </div>
+                <i
+                  class="mdi mdi-bookmark-check text-success nav-profile-badge"
+                ></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item" style="display: none">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#ui-basic"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+              >
+                <span class="menu-title">Basic UI Elements</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/buttons.html"
+                      >Buttons</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/typography.html"
+                      >Typography</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../users/">
+                <span class="menu-title">Candidates</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../jobs/">
+                <span class="menu-title">Jobs</span>
+                <i class="mdi mdi-bag-personal menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../addpost/">
+                <button class="btn btn-block btn-lg btn-gradient-primary mt-4">
+                  + Post Job
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="signout()">
+                <span class="menu-title">Sign Out</span>
+                <i class="mdi mdi-bag-personal menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item" style="display: none">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#general-pages"
+                aria-expanded="false"
+                aria-controls="general-pages"
+              >
+                <span class="menu-title">Sample Pages</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-medical-bag menu-icon"></i>
+              </a>
+              <div class="collapse" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/blank-page.html">
+                      Blank Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/login.html">
+                      Login
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/register.html">
+                      Register
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-404.html">
+                      404
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-500.html">
+                      500
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="container">
+              <div class="main-body">
+                <div class="row gutters-sm">
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div
+                          class="d-flex flex-column align-items-center text-center"
+                        >
+                          <img
+                            src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            alt="Admin"
+                            id="profileURL"
+                            class="rounded-circle"
+                            width="150"
+                          />
+                          <div class="mt-3">
+                            <h4 id="leftName"></h4>
+                            <p
+                              class="text-secondary mb-1"
+                              id="qualification"
+                            ></p>
+                            <p
+                              class="text-muted font-size-sm"
+                              id="experience"
+                            ></p>
+                            <a
+                              class="btn btn-outline-primary"
+                              href=""
+                              id="cv"
+                              target="_blank"
+                            >
+                              Resume/CV
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mt-3"></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Full Name</h6>
+                          </div>
+                          <div
+                            class="col-sm-9 text-secondary"
+                            id="fullname"
+                          ></div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Email</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary" id="email"></div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Phone</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary" id="phone"></div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Portfolio</h6>
+                          </div>
+                          <div
+                            class="col-sm-9 text-secondary"
+                            id="portfolio"
+                          ></div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Address</h6>
+                          </div>
+                          <div
+                            class="col-sm-9 text-secondary"
+                            id="address"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row gutters-sm">
+                      <div style="display: none" class="col-sm-6 mb-3">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h6 class="d-flex align-items-center mb-3">
+                              <i class="material-icons text-info mr-2"
+                                >assignment</i
+                              >Project Status
+                            </h6>
+                            <small>Web Design</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 80%"
+                                aria-valuenow="80"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <small>Website Markup</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 72%"
+                                aria-valuenow="72"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <small>One Page</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 89%"
+                                aria-valuenow="89"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <small>Mobile Template</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 55%"
+                                aria-valuenow="55"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <small>Backend API</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 66%"
+                                aria-valuenow="66"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="display: none" class="col-sm-6 mb-3">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h6 class="d-flex align-items-center mb-3">
+                              <i class="material-icons text-info mr-2"
+                                >assignment</i
+                              >Project Status
+                            </h6>
+                            <small>Web Design</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 80%"
+                                aria-valuenow="80"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <small>Website Markup</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 72%"
+                                aria-valuenow="72"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <small>One Page</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 89%"
+                                aria-valuenow="89"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <small>Mobile Template</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 55%"
+                                aria-valuenow="55"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <small>Backend API</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div
+                                class="progress-bar bg-primary"
+                                role="progressbar"
+                                style="width: 66%"
+                                aria-valuenow="66"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../assets/js/off-canvas.js"></script>
+    <script src="../assets/js/hoverable-collapse.js"></script>
+    <script src="../assets/js/misc.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+    <script src="../firebase/firebase_config.js"></script>
+    <script src="profile.js"></script>
+    <script src="../commonFunctions.js"></script>
+  </body>
+</html>
